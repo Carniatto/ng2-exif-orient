@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { ExifDirective } from './exif.directive';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ExifDirective
   ],
   imports: [
     BrowserModule
