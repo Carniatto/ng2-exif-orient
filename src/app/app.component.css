@@ -12,6 +12,11 @@ div {
     border: 1px solid #000;
 }
 
+canvas {
+    border: 1px solid black;
+    display: none;
+}
+
 .orient-2 {
     transform: scaleX(-1);
 }

@@ -1,10 +1,15 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
-<div>
-  <img id="test" alt="as" appExif="assets/image03.jpg">
-</div>
-<div>
-  <img id="test" alt="as" src="assets/image03.jpg">
+<!-- <div *ngFor="let upload of uploads">
+  <img  alt="as" [src]="upload.url">
+  <button (click)="delete(upload)">X</button>
+</div> -->
+
+<div *ngFor="let img of imgs">
+  <img  alt="as" [src]="img.url">
 </div>
 
+
 <input type="file" name="" id="" (change)="handleInputChange($event)">
+
+<canvas #cvs width="300" height="300"></canvas>
